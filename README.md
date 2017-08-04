@@ -1,6 +1,10 @@
 # Demo
 
-Demo [Demo Read Content File](http://readcontentfile.azurewebsites.net) 
+Demo [Read Content File](http://readcontentfile.azurewebsites.net) 
+
+## Data Example
+
+Data [Example](https://github.com/cnvillegaschavez/readcontentfile/blob/master/src/assets/datalocation.txt)
 
 # Readcontentfile
 

@@ -1,0 +1,80 @@
+<h1>
+  {{title}}
+</h1>
+<div>
+    <input  md-raised-button id="file" type="file" (change)="fileChanged($event)">
+     <button md-raised-button (click)="showData()">Show Data</button>
+    <p *ngIf="fileName">File Name：{{fileName}}</p>
+</div>
+
+
+<div *ngIf="dataDepartament.length>0">
+<h3>DEPARTAMENTO</h3>
+<table border="1" md-table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Código Padre</th>
+      <th>Descripción Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of dataDepartament">
+        <td>{{item.code}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.codeParent}}</td>
+        <td>{{item.nameParent}}</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div *ngIf="dataProvince.length>0">
+
+<h3>PROVINCIA</h3>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Código Padre</th>
+      <th>Descripción Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of dataProvince">
+        <td>{{item.code}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.codeParent}}</td>
+        <td>{{item.nameParent}}</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div *ngIf="dataDistrict.length>0">
+
+<h3>DISTRITO</h3>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Código Padre</th>
+      <th>Descripción Padre</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of dataDistrict">
+        <td>{{item.code}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.codeParent}}</td>
+        <td>{{item.nameParent}}</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>

@@ -4,7 +4,7 @@ Demo [Read Content File](http://readcontentfile.azurewebsites.net)
 
 ## Data Example
 
-Data [Example](https://github.com/cnvillegaschavez/readcontentfile/blob/master/src/assets/datalocation.txt)
+Data [Example](https://raw.githubusercontent.com/cnvillegaschavez/readcontentfile/master/src/assets/datalocation.txt)
 
 # Readcontentfile
 

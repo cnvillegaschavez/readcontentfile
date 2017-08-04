@@ -1,5 +1,7 @@
 # Demo
 
+[Code principal](https://github.com/cnvillegaschavez/readcontentfile/blob/master/src/app/app.component.ts)
+
 Demo [Read Content File](http://readcontentfile.azurewebsites.net) 
 
 ## Data Example

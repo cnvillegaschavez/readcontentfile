@@ -2,12 +2,15 @@
   {{title}}
 </h1>
 <div>
-    <input  md-raised-button id="file" type="file" (change)="fileChanged($event)">
-     <button md-raised-button (click)="showData()">Show Data</button>
-    <p *ngIf="fileName">File Name：{{fileName}}</p>
+      <input  md-raised-button id="file" type="file" [(ngModel)]="propertyFile" (change)="fileChanged($event)">
+      <button md-raised-button (click)="showData()">Mostrar Data</button>
+      <button md-raised-button (click)="onReset()">Reinicar</button>
+
+      <md-chip-list *ngIf="fileName || message" >
+        <md-chip color="primary" selected="true">File Name:{{fileName}}</md-chip>
+        <md-chip color="primary" selected="true">{{message}}</md-chip>
+      </md-chip-list>
 </div>
-
-
 <div *ngIf="dataDepartament.length>0">
 <h3>DEPARTAMENTO</h3>
 <table border="1" md-table>
